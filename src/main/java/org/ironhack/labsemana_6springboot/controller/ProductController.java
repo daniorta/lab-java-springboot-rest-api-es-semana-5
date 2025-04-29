@@ -28,7 +28,7 @@ public class ProductController {
 
     //Crear producto
     @PostMapping
-    public Product newProduct(@RequestHeader(value = "Api-Key") String apiKey,
+    public Product newProduct(@RequestHeader(value = "API-Key") String apiKey,
                               @RequestBody Product product){
         checkApiKey(apiKey);
         return productService.createProduct(product);

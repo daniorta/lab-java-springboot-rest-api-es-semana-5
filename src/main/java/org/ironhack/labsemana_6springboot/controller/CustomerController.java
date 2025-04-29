@@ -27,6 +27,18 @@ public class CustomerController {
         return customerService.getAllCustomer();
     }
 
+    @GetMapping("/{email}")
+    public Customer getCustomerEmail(@PathVariable String email){
+        return customerService.getCustomerEmail(email);
+    }
 
+    @PutMapping("/{email}")
+    public Customer updateCustomer(@PathVariable String email,@RequestBody(required = false) Customer customer){
+        return customerService.updateCustomer(email, customer);
+    }
 
+    @DeleteMapping("/{email}")
+    public void removeCustomer(@PathVariable String email){
+        customerService.removeCustomer(email);
+    }
 }
