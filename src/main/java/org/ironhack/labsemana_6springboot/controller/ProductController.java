@@ -4,7 +4,6 @@ import org.ironhack.labsemana_6springboot.exception.InvalidPriceRangeException;
 import org.ironhack.labsemana_6springboot.exception.MissingApiKeyException;
 import org.ironhack.labsemana_6springboot.model.Product;
 import org.ironhack.labsemana_6springboot.service.ProductService;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

@@ -23,7 +23,7 @@ public class Product {
     //Garantizar que la cantidad sea un número válido y positivo.
     @NotNull(message = "La quantity debe ser un número válido.")
     @Positive(message = "La quantity debe ser un número positivo.")
-    private double quantity;
+    private int quantity;
 
     public Product(String name, Integer price, String category, double quantity){
         this.name = name;
@@ -57,11 +57,11 @@ public class Product {
         this.category = category;
     }
 
-    public double getQuantity() {
+    public int getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(double quantity) {
+    public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
 }
