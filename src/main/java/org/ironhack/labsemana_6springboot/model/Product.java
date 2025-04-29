@@ -25,7 +25,7 @@ public class Product {
     @Positive(message = "La quantity debe ser un número positivo.")
     private int quantity;
 
-    public Product(String name, Integer price, String category, double quantity){
+    public Product(String name, Integer price, String category, int quantity){
         this.name = name;
         this.price = price;
         this.category = category;
